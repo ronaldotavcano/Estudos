@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+ article p{    /*Combinador descendente: p é filho de article, ou seja, está dentro do article */
+    color:red
+}
+
+span, mark{
+    color:blue  /*Combinador Lista: é uma vírgula, você vai colocando as tags que vc quer */
+}
+
+h2 + p{
+    color: green; /*Combinador next sibling: funciona com o sinal de +, observa se tem um irmão próximo */
+}
+
+ul > ul{
+    color: blueviolet; /*Cpmbinator child: é o filho usa com o sinal >*/
+}
+    
+    
+    

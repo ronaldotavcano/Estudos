@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html forms</title>
+</head>
+<body>
+    <form>
+        <input
+        placeholder="escreva seu nome"
+        type="text" 
+        name="nome">
+        <button>submit</button>
+    </form>
+
+    <form>
+        <input
+        required
+        placeholder="obrigatório preencher"
+        type="text" 
+        name="nome">
+        <button>submit</button>
+    </form>
+
+    <form>
+        <input
+        placeholder="numeros"
+        type="number" 
+        name="numero"
+        min="10"
+        max="22">
+        <button>submit</button>
+    </form>
+
+    <form>
+        <input
+        placeholder="email"
+        type="email" 
+        name="emails"
+        >
+        <button>submit</button>
+    </form>
+
+    <form>
+        <input
+        placeholder="email privado"
+        type="email" 
+        name="emails"
+        pattern="@solversys\.com"
+        >
+        <button>submit</button>
+    </form>
+    <form>
+        <input
+        placeholder="senha"
+        type="password" 
+        name="senha"
+        minlength="4"
+        max="16"
+        >
+        <button>submit</button>
+    </form>
+    <form>
+        <input
+        placeholder="senha com criterios"
+        type="password" 
+        name="senha"
+        minlength="4"
+        max="16"
+        pattern="[0-9a-z-A-Z!#.]"      
+        >                                   <!--PATTERN = CRITERIOS SENHA -->
+        <button>submit</button> 
+    </form>
+    <form>
+        <input 
+        type="file"
+        name="arquivo"
+        >
+        <button>submit</button>
+    </form>
+    <form>
+        <input 
+        type="file"
+        name="arquivo"
+        multiple
+        >
+        <button>submit</button>
+    </form>
+    <form>
+        <input 
+        type="file"
+        name="arquivo"
+        multiple
+        accept="image/*"
+        > <!--QUALQUER TIPO DE IMAGEM-->
+        <button>submit</button>
+    </form>
+
+    <input 
+    type="range"
+    min="0"
+    max="10">
+    <button>Submit</button>
+
+    <input 
+    type="range"
+    step="10"
+    min="0"
+    max="100">
+    <button>Submit</button>
+
+    <input 
+    type= "color"
+    >
+    <button>submit</button>
+
+    <datalist id="colorpicker">
+        <option value="#AFDAAC"></option>
+        <option value="#A0D0AC"></option>
+    </datalist>
+    <input 
+    type= "color"
+    list="colorpicker"
+    >
+    <button>submit</button>
+
+    <form>
+        <input 
+        type="checkbox"
+        value="fiat"
+        checked>
+    </form>
+    <button>submit</button>
+<br>
+    <input 
+        type="radio"
+        name="carro"
+        value="fiat"
+        value="audi"
+        checked>
+        <br>
+    
+    <label for="nome">Nome</label>
+    <input 
+    id="nome"
+    type="text" 
+    name="nome"
+    placeholder="Coloque seu nome">
+    <button>submit</button>
+    <br>
+    <br>
+    <form>
+        <textarea name="texto" minlength="10"></textarea>
+        <button>submit</button>
+    </form>
+    <br>
+    <br>
+    <form>
+        <select name="car" >
+            <option value="">selecione</option>
+            <option value="fiat">fiat</option>
+            <option value="audi">audi</option>
+            <option value="mercedes">mercedes</option>
+            <option value="bmw">bmw</option>
+        </select>
+        <button>submit</button>
+    </form>
+    <br>
+    <br>
+    <form >
+        <fieldset>
+            <legend>Contato</legend>
+            <input type="text" name="nome" placeholder="seu nome">
+            <input type="email" name="email" placeholder="email">
+            <button>enviar</button>
+        </fieldset>
+    </form>
+</body>
+</html>
