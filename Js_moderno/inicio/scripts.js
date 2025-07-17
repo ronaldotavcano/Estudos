@@ -92,4 +92,39 @@ newProduct({
     
 Rest params (...) permite representar um número indefinido
 de argumentos como um array
-*/
+
+                    // dps dos ... pode ser qq nome
+function values (...rest){ // dentro desse rest tem o restante dos parametros
+    console.log(rest)// se tirar os 3 pontos vira um array
+}
+
+values(2, 1, 3, 4, 5)
+
+Spread(espalhar)-> permite que um objeto iterável, como uma
+expressão de array ou uma string seja expandido para ser
+usado onde zero ou mais argumentos.
+
+
+const numbers = [1, 2, 3]
+console.log(numbers)
+
+//spread
+console.log(...numbers)
+
+const data = [
+    {
+        name: "Ronaldo",
+        email: "ronaldo@gmail.com",
+        avatar: "r.png",
+    },
+    {
+        name: "Joao",
+        email: "joao@gmail.com",
+        avatar: "j.png",
+    },
+]
+
+console.log(data)
+
+// spread em array de objs
+console.log(...data)*/
