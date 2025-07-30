@@ -1,0 +1,56 @@
+.net é uma plataforma, ou seja, já tera várias classes e bibliotecas prontas dá suporte a C#, F# e Visual Basic.
+.net framework apenas para windows
+.net core -> da suporte à .net framework, ambientes windows, linux, macOS
+Versões do .net core 1, 2, 2.1, 2.2, 3, 3.1 e acabou (Decidiu remover a palavra core do nome e pulou pro 5)
+
+POO -> programação orientada a objetos. Objeto -> deve receber dados/atributos. Ex: pense num carro quais dados
+são possíveis num carro ? Modelo, marca, ano, placa e também deve receber comportamentos/funções/métodos ex:
+função ligar/desligar, acelerar/freiar, mudar de direção etc...
+
+4 pilares:
+
+	1º) Herança = reutilização de código, cria uma hierarquia de classe. Uma
+classe mais específica pode herdar uma classe mais genérica. Ex: eu tenho um carro
+com todas as funções acima, dps de um tempo eu compro um ônibus. Agr vamos mudar as
+dados/funções genericas para a classe veiculo e as classes especificas como carro
+moto e onibus que vão herdar a classe veiculo. Como herdar em C#?
+assim:
+	public class Carro : Veiculo
+	{
+
+	}
+Carro é uma classe filha/derivada da classe veiculo. Tudo que a gente fizer na classe
+mãe podemos fazer na filha.
+
+	2º) Encapsulamento = é um conceito que visa o controle do acesso dos atributos
+dos dados e comportamentos, fazemos isso definindo modificadores de acesso em C# temos
+4 modificadores: public, internal, private e protected. Ex:
+
+	Projeto A ---> Projeto B (projeto A nn pode ver B se B já ver o A) isso causa
+dependência ciclica. Se o proj A tem referencia com B e crio uma classe em B como
+public significa que no projeto A qq classe pode acessar ou modificar a classe de B.
+Se for internal somente outras classes de B terão acesso a ela. Dados só tem esses 2
+os métodos/funções podem ter os 4 modificadores. 
+Se o método tiver private significa que apenas a própria classe tem acesso, nenhuma
+do projeto B muito menos do A tem acesso.
+Se o método tiver protected significa que somente a classe que definiu esse método pode
+utilizar mas também classes filhas
+	
+	3º) Abstração = foca em oq é essencial para o objeto sem se preocupar em detalhes.
+Ex: vários dados de um carro compõe um ônibus, uma moto. Um veículo seria uma coisa 
+abstrata
+	public abstract class veiculo
+	{
+	  public string Cor { get; set; }
+	  public string Modelo { get; set; }
+	  public string Placa { get; set; }
+	}
+significa que se eu tentar fazer um new (criar uma instância de um objeto) ter um onjeto
+que é abstrato. ex: var meuVeiculo = new Veiculo() vai dar erro, nn pode ter uma instancia
+abstrata/genérica. Também serve para forçar todas as classes filhas implementar um método
+
+	4º) Polimorfismo = várias formas, uma função ex: fazerQualquerCoisa pode se ligar
+a varios objketos como carro, moto, jetski.
+
+
+
