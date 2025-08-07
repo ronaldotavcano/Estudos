@@ -10,7 +10,10 @@ builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
+<<<<<<< HEAD
 // só abre o swagger se for desenvolvimento
+=======
+>>>>>>> 43a0b8715a630a7737922e068fc48416e3821889
 if (app.Environment.IsDevelopment())
 {
 app.UseSwagger();

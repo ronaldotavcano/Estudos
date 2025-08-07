@@ -97,7 +97,7 @@ Método reduce() -> é utilizado para reduzir um array a um
 (accumulator), valor da iteração (currentValue), valor inicial
 (0), Index (index da iteração atual - opcional)
 
-*/
+
 const values = [1, 2, 3, 4, 5]
 
 const sum = values.reduce((accumulator, currentValue, index) => {
@@ -111,3 +111,4 @@ const sum = values.reduce((accumulator, currentValue, index) => {
 }, 0)
 
 console.log("Resultado final =", sum)
+*/
