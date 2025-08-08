@@ -43,7 +43,7 @@ for diferente do anterior, concluímos que o objeto foi alterado
 
 Benefícios --> como os dados imutáveis podem determinar fa
 cilmente se ocorreram alterações, isso também ajuda a determinar
-quando um componente deve ser renderizado novamente*/
+quando um componente deve ser renderizado novamente
 
 // Aplicando imutabilidade
 
@@ -61,7 +61,7 @@ const address1 = {
 // e valores do obj 1
 //address2 = {...address1}
 //address2.number = 30
-agr temos obj diferentes e muda só o num do 2º*/
+agr temos obj diferentes e muda só o num do 2º
 
 // opção 2
 const address2 = {...address1, number:30}
@@ -83,7 +83,7 @@ const fruits2 = [...fruits1, "Orange"]
 
 /*
 Shalow copy ->
-*/
+
 
 const htmlCourse = {
     course: "HTML",
@@ -95,7 +95,7 @@ const jsCourse = {
     ...htmlCourse,
     course: "javascript",
 }
-*/
+
 // o html add o joao tbm, pq students é um obj identado
 //jsCourse.students.push({name: "João", email: "joao@gmail.com"})
 
@@ -187,3 +187,4 @@ console.log(updatedBook)
 // operador de desestruturação
 const { category, ...bookWithoutCategory} = book
 console.log(bookWithoutCategory)
+*/
