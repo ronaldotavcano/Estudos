@@ -1,5 +1,19 @@
 {
-    "teste": {
-        "name": "Ronaldo"
-    }
+    "products" : [
+        { 
+            "id": "1",
+            "name": "Mouse",
+            "price": 70.25
+        },
+        { 
+            "id": "2",
+            "name": "Teclado",
+            "price": 199.99
+        },
+        { 
+            "id": "3",
+            "name": "Computer",
+            "price": 5230.32
+        }
+    ]
 }
