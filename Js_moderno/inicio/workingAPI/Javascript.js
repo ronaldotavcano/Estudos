@@ -30,4 +30,6 @@ Ex:
         },
     }
 }
+    Para mudar a versão especifica:
+    npm install json-server@(numeroDaVersão)
 */
