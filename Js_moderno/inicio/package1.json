@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "server": "json-server workingApi/server.json"
+  },
+  "dependencies": {
+    "json-server": "^1.0.0-alpha.17"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.28.3",
+    "@babel/core": "^7.28.3",
+    "@babel/preset-env": "^7.28.3"
+  }
+}
