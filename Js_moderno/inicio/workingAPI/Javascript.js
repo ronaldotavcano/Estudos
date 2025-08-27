@@ -32,7 +32,7 @@ Ex:
 }
     Para mudar a versão especifica:
     npm install json-server@(numeroDaVersão)
-*/
+
 // https é qnd a API vem da internet
 //const response = fetch("http://localhost:3000/products")
 //console.log(response)// retorno é uma promise
@@ -43,4 +43,14 @@ fetch("http://localhost:3000/products").then( (response) =>{
     response.json().then( (data) => {
         console.log(data)
     }) // exibe o resultado da API
-}) 
+}) */
+
+// fetch + then é melhor pra quando eu não quero criar uma nova func
+// Usando async e await (Principal)
+
+async function fetchProducts(){
+    const response = await fetch("http://localhost:3000/products")
+    const data = await response.json()
+    console.log(data)
+}
+fetchProducts()
