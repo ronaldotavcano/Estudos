@@ -53,4 +53,12 @@ async function fetchProducts(){
     const data = await response.json()
     console.log(data)
 }
-fetchProducts()
+
+//fetchProducts()
+
+async function fetchProductsById(id){
+    const response = await fetch(`http://localhost:3000/products/${id}`)
+    const data = await response.json()
+    console.log(data)
+}
+fetchProductsById("1")
