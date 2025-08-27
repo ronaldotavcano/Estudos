@@ -54,11 +54,35 @@ async function fetchProducts(){
     console.log(data)
 }
 
-//fetchProducts()
 
 async function fetchProductsById(id){
     const response = await fetch(`http://localhost:3000/products/${id}`)
     const data = await response.json()
     console.log(data)
 }
-fetchProductsById("1")
+//fetchProducts()
+//fetchProductsById("1")
+
+const productName = document.getElementById("name")
+const productPrice = document.getElementById("price")
+const form = document.getElementsByTagName("form")
+
+addEventListener("submit", async(event) =>{
+    event.preventDefault()
+    
+    // Requisição com método POST
+    await fetch("http://localhost:3000/products", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application-json"
+        },
+        // stringify -> é o método que existe aqui dentro do json, para poder serializar
+        body: JSON.stringify({
+            id: new Date().getTime().toString(),
+            name: productName.value,
+            price: productPrice.value,
+        })
+    })
+
+    await fetchProducts()
+})
