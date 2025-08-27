@@ -33,3 +33,14 @@ Ex:
     Para mudar a versão especifica:
     npm install json-server@(numeroDaVersão)
 */
+// https é qnd a API vem da internet
+//const response = fetch("http://localhost:3000/products")
+//console.log(response)// retorno é uma promise
+// pq, pq eu fiz uma requisição pra api
+fetch("http://localhost:3000/products").then( (response) =>{
+    //converte para formato json
+    // qnd a promise for resolvida ele retorna os dados
+    response.json().then( (data) => {
+        console.log(data)
+    }) // exibe o resultado da API
+}) 
