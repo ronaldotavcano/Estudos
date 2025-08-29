@@ -1,0 +1,14 @@
+# Dependências do Node
+Js_moderno/inicio/node_modules/
+
+# Builds
+Js_moderno/inicio/dist/
+
+# Logs
+*.log
+
+# Arquivos de ambiente
+.env
+
+# Configurações de IDE
+.vscode/

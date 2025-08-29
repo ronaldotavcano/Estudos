@@ -1,0 +1,8 @@
+bundler -> agrupa todas as dependências em um arquivo só.
+
+Mapeando um gráfico de dependências:
+    1ª) coisa que um empacotador de modulo faz é criar um 
+    mapa vendo qual arquivo depende de qual (resolução de
+    dependências)
+    
+    
