@@ -1,6 +1,6 @@
-export function title(title) {
+export function title(text) {
     const element = document.createElement("h1")
-    element.textContent = title
+    element.textContent = text
 
     document.body.appendChild(element)
 }
